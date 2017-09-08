@@ -1,11 +1,13 @@
 
 class Presentacion {
-
+	
+	var dia
 	var fecha
 	var predio
 	var cantantes=#{}
 	
-	constructor(unaFecha,unPredio,unosCantantes){
+	constructor(unDia,unaFecha,unPredio,unosCantantes){
+		dia=unDia
 		fecha=unaFecha //Formato AAAAMMDD
 		predio=unPredio
 		cantantes=unosCantantes
@@ -22,6 +24,6 @@ class Presentacion {
 		return fecha
 	}
 	method esConcurrido(){
-		return predio.capacidad() > 5000
+		return predio.capacidad(dia) > 5000
 	}
-}
+}	
