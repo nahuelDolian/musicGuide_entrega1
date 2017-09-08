@@ -1,20 +1,15 @@
 
-class Fender {
+object fender {
 
-	var valor
-	var estado
-	
-	constructor (){
-		valor=10
-		estado="sana"
-	}
+	var valor = 10
+	var estado "sana"
 	
 	method dameTuValor(){
 		return valor
 	}
 	
 	method dameTuEstado(){
-		return valor
+		return estado == "sana"
 	}
 
 }
