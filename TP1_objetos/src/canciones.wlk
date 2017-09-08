@@ -3,8 +3,8 @@ import musicos.*
 object cisne {
 	
 	method duracion(){
-		return 312}
-		
+		return 312
+		}	
 	method esLarga(){
 		return self.duracion() > 300
 	}	
@@ -20,8 +20,8 @@ object cisne {
 }
 object laFamilia{
 	method duracion(){
-		return 264}
-	
+		return 264
+	}
 	method letra(){
 		return #{"Quiero", "brindar", "por", "mi", "gente", "sencilla", "por", "el", 
 			"amor", "brindo", "por", "la", "familia"}
