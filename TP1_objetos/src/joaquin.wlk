@@ -31,11 +31,6 @@ object  joaquin {
 		grupo=null
 	}
 	
-		
-	/*method ponerEnUnaBanda(unaBanda){
-		grupo=unaBanda
-	}*/
-	
 	method costoDePresentacion(unPredio){
 		if(self.estaEnGrupo()){
 			return 50
