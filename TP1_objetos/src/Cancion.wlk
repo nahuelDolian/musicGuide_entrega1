@@ -22,14 +22,12 @@ class Cancion {
 		return letra
 	}
 	
-	method contieneFamilia(){
-		return  letra.contains("familia")||letra.contains("familia")
-		
-		}
+	method contieneDichaPalabra(unaPalabra) 
+		return  letra.contains(unaPalabra)
+	}
 	
 	method tieneMasDe(unValor){
 		return duracion > unValor
-	
 	}
 	
 	
