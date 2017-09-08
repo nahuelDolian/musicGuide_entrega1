@@ -29,7 +29,4 @@ class Cancion {
 	method tieneMasDe(unValor){
 		return duracion > unValor
 	}
-	
-	
-
 }
