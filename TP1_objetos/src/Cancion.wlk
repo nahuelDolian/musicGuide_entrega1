@@ -22,7 +22,7 @@ class Cancion {
 		return letra
 	}
 	
-	method contieneLaPalabra(){
+	method contieneFamilia(){
 		return  letra.contains("familia")||letra.contains("familia")
 		
 		}
