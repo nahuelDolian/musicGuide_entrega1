@@ -39,8 +39,5 @@ object lucia {
 		}
 	}
 	
-	/*method ponerEnUnaBanda(unaBanda){
-		grupo=unaBanda
-	}*/
 	
 }
