@@ -23,8 +23,12 @@ object lucia {
 		habilidad=unValor
 	}*/
 	
-	method interpretaBien(unaCancion){
+	/*method interpretaBien(unaCancion){
 		return unaCancion.dameTuNombre().contains("familia")||unaCancion.dameTuLetra().contains("familia")
+	}*/
+	
+	method interpretaBien(unaCancion){
+		return unaCancion.contienLaPalabra("familia")
 	}
 	
 	method costoDePresentacion(unaPresentacion){
