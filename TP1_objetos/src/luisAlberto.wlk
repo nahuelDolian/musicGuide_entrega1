@@ -11,7 +11,7 @@ object luisAlberto {
 	}
 	
 	method costoDePresentacion(unaPresentacion){
-		if(unaPresentacion.fechaMes()<=9){
+		if(unaPresentacion.fecha()<=20170900){
 			return 1000
 		}else{
 			return 1200

@@ -6,7 +6,7 @@ class Presentacion {
 	var cantantes=#{}
 	
 	constructor(unaFecha,unPredio,unosCantantes){
-		fecha=unaFecha
+		fecha=unaFecha //Formato AAAAMMDD
 		predio=unPredio
 		cantantes=unosCantantes
 	}
@@ -17,5 +17,8 @@ class Presentacion {
 		})
 		return costos.sum()
 		
+	}
+	method fecha(){
+		return fecha
 	}
 }
