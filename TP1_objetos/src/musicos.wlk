@@ -1,23 +1,20 @@
 object joaquin {
-	var grupo = "Pimpinela" //Cambiar var grupo a method u otra forma
-	var habilidad=20
-	var tocoCon=#[]
+	var habilidad =20
+	var tocoCon= #{}
 	var loQueCobro = 100
 	
-	method plata (){
-		return plata
-	}
-	constructor tocoCon(unAcompaniante){
-		tocoCon=unAcompaniante
+	method loQueCobro (){
+		return loQueCobro
 	}
 	method habilidad (){
 		return habilidad
 	}
+	
 	method modificarHabilidad(){
 		return self.tocoEnGrupo()
 	}  
 	method tocoEnGrupo() {
-		return habiliad += self.conCuantosToco(5)  
+		return habilidad += self.conCuantosToco(5)  
 	}
 	method conCuantosToco(unValor){
 		return (1.min(tocoCon.size()))*unValor
@@ -36,19 +33,18 @@ object joaquin {
 	}
 }
 object lucia {
-	var grupo = "Pimpinela" //Cambiar var grupo a method u otra forma
 	var habilidad = 70 
-	var tocoCon = #[] 
+	var tocoCon = #{"Pimpinela"} 
 	var loQueCobro = 400
 
-	method plata(){
-		return plata
+	method loQueCobro(){
+		return loQueCobro
 	}
 	method modificarHabilidad(){
 		return self.tocoEnGrupo()
 	}  
 	method tocoEnGrupo() {
-		return habiliad -= self.conCuantosToco(20)
+		return habilidad -= self.conCuantosToco(20)
 	}
 	method conCuantosToco(unValor){
 		return (1.min(tocoCon.size()))*unValor
