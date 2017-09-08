@@ -21,4 +21,7 @@ class Presentacion {
 	method fecha(){
 		return fecha
 	}
+	method esConcurrido(){
+		return predio.capacidad() > 5000
+	}
 }
