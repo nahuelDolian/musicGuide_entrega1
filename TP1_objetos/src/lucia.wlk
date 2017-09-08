@@ -28,7 +28,7 @@ object lucia {
 	}*/
 	
 	method interpretaBien(unaCancion){
-		return unaCancion.contienLaPalabra("familia")
+		return unaCancion.contieneDichaPalabra("familia")
 	}
 	
 	method costoDePresentacion(unaPresentacion){
