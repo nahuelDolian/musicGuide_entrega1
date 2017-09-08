@@ -1,0 +1,26 @@
+import lucia.*
+import Cancion.*
+
+describe"test de la cantante lucia"{
+	test "saber la habilidad de lucia estando en un grupo, deberia ser 50(el grupo le resta 20)" {
+	
+	assert.equals(50, lucia.saberHabilidad())
+	
+	}
+	
+	test"saber la habilidad de lucia como solista, deberia ser 70"{
+		lucia.serSolista()
+		assert.equals(70, lucia.saberHabilidad())
+	}
+	
+	test"saber si lucia puede interpretar bien la cancion La familia,si deberia poder "{
+		var laFamilia= new Cancion("la familia",264,"Quiero brindar por mi gente sencilla, por el amor brindo por la familia")
+		assert.equals(true, lucia.interpretaBien(laFamilia))
+	}
+	
+	test"saber si lucia interpreta bien la cancion cisne, no deberia poder"{
+		var cisne= new Cancion("cisne",312,"Hoy el viento se abrió quedó vacío el aire una vez más y el manantial brotó y nadie está aquí y puedo ver que solo estallan las hojas al brillar")
+		assert.equals(false, lucia.interpretaBien(cisne))
+	}
+	
+}

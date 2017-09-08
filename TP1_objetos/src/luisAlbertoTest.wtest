@@ -1,0 +1,28 @@
+import luisAlberto.*
+import Fender.*
+import Gibson.*
+
+describe "test para el musico luis alberto" {
+
+	test"saber la habilidad si esta tocando su fender, este deberia ser 80"{
+		luisAlberto.asignarHabilidad(8)
+		var fender=new Fender()
+		assert.equals(80, luisAlberto.saberHabilidad(fender))
+	}
+	
+	test"saber la habilidad de luis alberto si toca una gibson sana"{
+		luisAlberto.asignarHabilidad(8)
+		var gibson=new Gibson()
+		assert.equals(100, luisAlberto.saberHabilidad(gibson))
+		
+	}
+	
+	test"saber la habilidad de luis alberto si toca una gibson no sana"{
+		luisAlberto.asignarHabilidad(8)
+		var gibson=new Gibson()
+		gibson.romperGuitarra()
+		assert.equals(40, luisAlberto.saberHabilidad(gibson))
+		
+	}
+
+}
