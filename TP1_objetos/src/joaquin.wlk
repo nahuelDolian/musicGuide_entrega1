@@ -19,8 +19,12 @@ object  joaquin {
 		habilidad=unValor
 	}*/
 	
-	method interpretaBien(unaCancion){
+	/*method interpretaBien(unaCancion){
 		return unaCancion.dameTuDuracion()>300
+	}*/
+	
+	method interpretaBien(unaCancion){
+		return unaCancion.tieneMasDe(300)
 	}
 	
 	method serSolista(){
