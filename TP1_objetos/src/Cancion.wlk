@@ -22,8 +22,8 @@ class Cancion {
 		return letra
 	}
 	
-	method contienLaPalabra(unaPalabra){
-		return return letra.contains("familia")||letra.contains("familia")
+	method contieneLaPalabra(){
+		return  letra.contains("familia")||letra.contains("familia")
 		
 		}
 	
