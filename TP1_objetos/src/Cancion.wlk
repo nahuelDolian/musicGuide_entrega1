@@ -10,15 +10,15 @@ class Cancion {
 		letra=unaLetra
 	}
 	
-	method dameTuDuracion(){
+	method duracion(){
 		return duracion
 	}
 	
-	method dameTuNombre(){
+	method nombre(){
 		return nombre
 	}
 	
-	method dameTuLetra(){
+	method letra(){
 		return letra
 	}
 	
@@ -28,8 +28,7 @@ class Cancion {
 		}
 	
 	method tieneMasDe(unValor){
-		return duracion>unValor
-	
+		return duracion > unValor
 	
 	}
 	
