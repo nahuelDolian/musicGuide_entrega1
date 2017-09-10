@@ -1,13 +1,14 @@
 import joaquin.*
 import Cancion.*
+import lunaPark.*
 
 describe "test del cantante joaquin"{
 	
-	test"saber cual es la habilidad de joaquin si esta en un grupo, deberia ser 25"{
+	test"saber cual es la habilidad de joaquin si esta en un grupo, debería ser 25"{
 		assert.equals(25, joaquin.saberHabilidad())
 	}
 	
-	test"saber cual es la habilidad de joaqun si fuera solista, deberia ser 20"{
+	test"saber cual es la habilidad de joaqun si fuera solista, debería ser 20"{
 		joaquin.serSolista()
 		assert.equals(20, joaquin.saberHabilidad())
 	}
@@ -20,6 +21,10 @@ describe "test del cantante joaquin"{
 	test"saber si joaquin interpreta bien la cancion cisne"{
 		var cisne= new Cancion("cisne",312,"Hoy el viento se abrió quedó vacío el aire una vez más y el manantial brotó y nadie está aquí y puedo ver que solo estallan las hojas al brillar")
 		assert.equals(true, joaquin.interpretaBien(cisne))
+	}
+	
+	test"cuánto cobra Joaquin por la presentación del Luna Park, debería ser 50 "{
+		assert.equals(50,joaquin.costoDePresentacion(lunaPark))
 	}
 	
 	
