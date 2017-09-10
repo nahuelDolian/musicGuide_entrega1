@@ -22,7 +22,7 @@ class Cancion {
 		return letra
 	}
 	
-	method contieneDichaPalabra(unaPalabra) 
+	method contieneDichaPalabra(unaPalabra) {
 		return  letra.contains(unaPalabra)
 	}
 	

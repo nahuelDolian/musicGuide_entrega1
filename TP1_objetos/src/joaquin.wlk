@@ -38,7 +38,4 @@ object  joaquin {
 			return 100
 		}
 	}
-	
-
-
 }
