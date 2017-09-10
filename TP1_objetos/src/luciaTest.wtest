@@ -15,12 +15,21 @@ describe"test de la cantante lucia"{
 	
 	test"saber si lucia puede interpretar bien la cancion La familia,si deberia poder "{
 		var laFamilia= new Cancion("la familia",264,"Quiero brindar por mi gente sencilla, por el amor brindo por la familia")
-		assert.equals(true, lucia.interpretaBien(laFamilia))
+		assert.that( lucia.interpretaBien(laFamilia))
 	}
 	
 	test"saber si lucia interpreta bien la cancion cisne, no deberia poder"{
-		var cisne= new Cancion("cisne",312,"Hoy el viento se abriÛ quedÛ vacÌo el aire una vez m·s y el manantial brotÛ y nadie est· aquÌ y puedo ver que solo estallan las hojas al brillar")
-		assert.equals(false, lucia.interpretaBien(cisne))
+		var cisne= new Cancion("cisne",312,"Hoy el viento se abri√≥ qued√≥ vac√≠o el aire una vez m√°s y el manantial brot√≥ y nadie est√° aqu√≠ y puedo ver que solo estallan las hojas al brillar")
+		assert.notThat( lucia.interpretaBien(cisne))
 	}
-	
+	test "cuanto cobra lucia por tocar en el lunaPark, debe dar 500"{
+		var presentacionLunaPark = new Presentacion("jueves",20170420,lunaPark,#{joaquin,luisAlberto,lucia})
+		assert.equals(500, lucia.costoDePresentacion(presentacionLunaPark))
+	}	
+	test "cuanto cobra lucia por tocar en la trastienda, debe dar 400"{
+		var presentacionLaTrastienda= new Presentacion("jueves",20170420,laTastienda,#{joaquin,luisAlberto,lucia})
+		assert.equals(400, lucia.costoDePresentacion(trastienda))
+	}
+}
+
 }
