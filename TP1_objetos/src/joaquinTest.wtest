@@ -1,6 +1,10 @@
 import joaquin.*
+import luisAlberto.*
+import lucia.*
 import Cancion.*
 import lunaPark.*
+import trastienda.*
+import Presentacion.*
 
 describe "test del cantante joaquin"{
 	
@@ -15,17 +19,19 @@ describe "test del cantante joaquin"{
 	
 	test"saber si joaquin interpreta bien la cancion la familia"{
 		var laFamilia= new Cancion("la familia",264,"Quiero brindar por mi gente sencilla, por el amor brindo por la familia")
-		assert.equals(false, joaquin.interpretaBien(laFamilia))
+		assert.notThat(joaquin.interpretaBien(laFamilia))
 	}
 	
 	test"saber si joaquin interpreta bien la cancion cisne"{
 		var cisne= new Cancion("cisne",312,"Hoy el viento se abrió quedó vacío el aire una vez más y el manantial brotó y nadie está aquí y puedo ver que solo estallan las hojas al brillar")
-		assert.equals(true, joaquin.interpretaBien(cisne))
+		assert.that(joaquin.interpretaBien(cisne))
 	}
 	
-	test"cuánto cobra Joaquin por la presentación del Luna Park, debería ser 50 "{
-		assert.equals(50,joaquin.costoDePresentacion(lunaPark))
+	test"cuánto cobra Joaquin por la presentación del Luna Park, debería ser 50 (hay mas cantantes) "{
+		var presentacionLunaPark = new Presentacion("jueves",20170420,lunaPark,#{joaquin,luisAlberto,lucia})
+		assert.equals(50,joaquin.costoDePresentacion(presentacionLunaPark))
 	}
+
 	
 	
 }
