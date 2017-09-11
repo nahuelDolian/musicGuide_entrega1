@@ -29,6 +29,6 @@ class Presentacion {
 		return fecha
 	}
 	method esConcurrido(){
-		return predio.capacidad(dia) > 5000
+		return predio.esConcurrido(dia)
 	}
 }	
