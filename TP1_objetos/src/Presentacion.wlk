@@ -22,9 +22,9 @@ class Presentacion {
 		return mesDia*100 
 	}*/
 	
-	method costoPresentacion(){
+	method costoDePresentacion(){
 		var costos =cantantes.map({
-			cantante=>cantante.costoDePresentacion(predio)
+			cantante=>cantante.costoDePresentacion(self)
 		})
 		return costos.sum()
 		
