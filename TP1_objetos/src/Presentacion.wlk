@@ -13,6 +13,11 @@ class Presentacion {
 		cantantes=unosCantantes
 	}
 
+	/*method fechaMes(){
+		var mesDia = fecha%10000
+		return mesDia*100 
+	}*/
+	
 	method costoPresentacion(){
 		var costos =cantantes.map({
 			cantante=>cantante.costoDePresentacion(predio)
