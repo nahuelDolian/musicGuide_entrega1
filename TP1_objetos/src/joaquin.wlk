@@ -31,11 +31,11 @@ object  joaquin {
 		grupo=null
 	}
 	
-	method costoDePresentacion(unPredio){
-		if(self.estaEnGrupo()){
-			return 50
-		}else{
+	method costoDePresentacion(unaPresentacion){
+		if(!self.estaEnGrupo()||unaPresentacion.cantaSolo(self)){
 			return 100
+		}else{
+			return 50
 		}
 	}
 }
