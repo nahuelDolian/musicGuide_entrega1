@@ -3,7 +3,7 @@ import Gibson.*
 
 object luisAlberto {
 	
-	var habilidad
+	var habilidad = 8
 	
 	
 	method saberHabilidad(unaGuitarra){
