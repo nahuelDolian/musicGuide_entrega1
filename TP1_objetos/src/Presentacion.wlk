@@ -12,6 +12,10 @@ class Presentacion {
 		predio=unPredio
 		cantantes=unosCantantes
 	}
+	
+	method cantaSolo(unCantante){
+		return cantantes.contains(unCantante)&&cantantes.size()==1
+	}
 
 	/*method fechaMes(){
 		var mesDia = fecha%10000
