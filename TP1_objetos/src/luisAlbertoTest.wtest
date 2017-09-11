@@ -1,28 +1,52 @@
 import luisAlberto.*
+import joaquin.*
+import lucia.*
 import Fender.*
 import Gibson.*
+import Cancion.*
+import lunaPark.*
+import trastienda.*
+import Presentacion.*
 
 describe "test para el musico luis alberto" {
 
 	test"saber la habilidad si esta tocando su fender, este deberia ser 80"{
-		luisAlberto.asignarHabilidad(8)
 		var fender=new Fender()
 		assert.equals(80, luisAlberto.saberHabilidad(fender))
 	}
 	
 	test"saber la habilidad de luis alberto si toca una gibson sana"{
-		luisAlberto.asignarHabilidad(8)
 		var gibson=new Gibson()
 		assert.equals(100, luisAlberto.saberHabilidad(gibson))
 		
 	}
 	
 	test"saber la habilidad de luis alberto si toca una gibson no sana"{
-		luisAlberto.asignarHabilidad(8)
 		var gibson=new Gibson()
 		gibson.romperGuitarra()
 		assert.equals(40, luisAlberto.saberHabilidad(gibson))
 		
 	}
+	
+	test"saber si luis Alberto interpreta bien la cancion la familia, deberia poder"{
+		var laFamilia= new Cancion("la familia",264,"Quiero brindar por mi gente sencilla, por el amor brindo por la familia")
+		assert.that(luisAlberto.interpretaBien(laFamilia))
+	}
+	
+	test"queremos saber si luis alberto interpreta bien Cisne, deberia poder"{
+		var cisne= new Cancion("cisne",312,"Hoy el viento se abrió quedó vacío el aire una vez más y el manantial brotó y nadie está aquí y puedo ver que solo estallan las hojas al brillar")
+		assert.that(luisAlberto.interpretaBien(cisne))
+	}
+
+	test"queremos saber cuanto cobra luis por la presentacion en luna park, serian 1000 por ser antes de septiempre"{
+		var unaPresentacion = new Presentacion("jueves",20170420,lunaPark,#{joaquin,luisAlberto,lucia})
+		assert.equals(1000, luisAlberto.costoDePresentacion(unaPresentacion))
+	}
+	
+	test"queremos saber cuanto cobra luis por la presentacion en la trastienda, serian 1200 por ser despues de septiempre"{
+		var unaPresentacion = new Presentacion("miercoles",20171115,trastienda,#{joaquin,luisAlberto,lucia})
+		assert.equals(1200, luisAlberto.costoDePresentacion(unaPresentacion))
+	}
+
 
 }
