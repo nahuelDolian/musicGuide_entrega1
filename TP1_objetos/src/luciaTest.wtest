@@ -1,5 +1,10 @@
 import lucia.*
+import joaquin.*
+import luisAlberto.*
 import Cancion.*
+import Presentacion.*
+import lunaPark.*
+import trastienda.*
 
 describe"test de la cantante lucia"{
 	test "saber la habilidad de lucia estando en un grupo, deberia ser 50(el grupo le resta 20)" {
@@ -27,9 +32,7 @@ describe"test de la cantante lucia"{
 		assert.equals(500, lucia.costoDePresentacion(presentacionLunaPark))
 	}	
 	test "cuanto cobra lucia por tocar en la trastienda, debe dar 400"{
-		var presentacionLaTrastienda= new Presentacion("jueves",20170420,laTastienda,#{joaquin,luisAlberto,lucia})
-		assert.equals(400, lucia.costoDePresentacion(trastienda))
+		var presentacionLaTrastienda= new Presentacion("jueves",20170420,trastienda,#{joaquin,luisAlberto,lucia})
+		assert.equals(400, lucia.costoDePresentacion(presentacionLaTrastienda))
 	}
-}
-
 }
