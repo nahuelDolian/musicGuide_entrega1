@@ -34,6 +34,7 @@ describe "test del cantante joaquin"{
 	
 	test "Cuánto cobra Joaquín por la presentación de la Trastienda del 15/11/2017,actuando sólo. Debería dar 100(actua solo)" {
 		var presentacionTrastienda = new Presentacion("miercoles",20171115,trastienda,#{joaquin})
+		assert.that(presentacionTrastienda.cantaSolo(joaquin))                     
 		assert.equals(100,joaquin.costoDePresentacion(presentacionTrastienda))
 		
 	}
