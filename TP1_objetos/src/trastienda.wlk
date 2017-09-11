@@ -11,6 +11,13 @@ object trastienda {
 	}
 	
 	method esConcurrido(unDia){
+		if(unDia=="sabado"){
+		return plantaBaja+primerPiso
+		}else{
+		return plantaBaja}
+	}
+	
+	method esConcurrido(unDia){
 		return self.capacidad(unDia)>5000
 	}
 	
