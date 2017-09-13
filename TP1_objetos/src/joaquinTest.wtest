@@ -8,11 +8,11 @@ import Presentacion.*
 
 describe "test del cantante joaquin"{
 	
-	test"saber cual es la habilidad de joaquin si esta en un grupo, debería ser 25"{
+	test"saber cual es la habilidad de joaquin si esta en un grupo, deberÃ­a ser 25"{
 		assert.equals(25, joaquin.saberHabilidad())
 	}
 	
-	test"saber cual es la habilidad de joaqun si fuera solista, debería ser 20"{
+	test"saber cual es la habilidad de joaqun si fuera solista, deberÃ­a ser 20"{
 		joaquin.serSolista()
 		assert.equals(20, joaquin.saberHabilidad())
 	}
@@ -23,22 +23,20 @@ describe "test del cantante joaquin"{
 	}
 	
 	test"saber si joaquin interpreta bien la cancion cisne"{
-		var cisne= new Cancion("cisne",312,"Hoy el viento se abrió quedó vacío el aire una vez más y el manantial brotó y nadie está aquí y puedo ver que solo estallan las hojas al brillar")
+		var cisne= new Cancion("cisne",312,"Hoy el viento se abriÃ³ quedÃ³ vacÃ­o el aire una vez mÃ¡s y el manantial brotÃ³ y nadie estÃ¡ aquÃ­ y puedo ver que solo estallan las hojas al brillar")
 		assert.that(joaquin.interpretaBien(cisne))
 	}
 	
-	test"cuánto cobra Joaquin por la presentación del Luna Park, debería ser 50 (hay mas cantantes) "{
+	test"cuÃ¡nto cobra Joaquin por la presentaciÃ³n del Luna Park, deberÃ­a ser 50 (hay mas cantantes) "{
 		var presentacionLunaPark = new Presentacion("jueves",20170420,lunaPark,#{joaquin,luisAlberto,lucia})
 		assert.equals(50,joaquin.costoDePresentacion(presentacionLunaPark))
 	}
-	
-	test "Cuánto cobra Joaquín por la presentación de la Trastienda del 15/11/2017,actuando sólo. Debería dar 100(actua solo)" {
+
+	test "CuÃ¡nto cobra JoaquÃ­n por la presentaciÃ³n de la Trastienda del 15/11/2017,actuando sÃ³lo. DeberÃ­a dar 100(actua solo)" {
 		var presentacionTrastienda = new Presentacion("miercoles",20171115,trastienda,#{joaquin})
 		assert.that(presentacionTrastienda.cantaSolo(joaquin))                     
 		assert.equals(100,joaquin.costoDePresentacion(presentacionTrastienda))
 		
 	}
-
-	
 	
 }
