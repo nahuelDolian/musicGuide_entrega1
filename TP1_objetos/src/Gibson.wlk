@@ -1,5 +1,5 @@
 
-class Gibson {
+object gibson {
 	var valor
 	var estado
 	
