@@ -8,9 +8,7 @@ import trastienda.*
 
 describe"test de la cantante lucia"{
 	test "saber la habilidad de lucia estando en un grupo, deberia ser 50(el grupo le resta 20)" {
-	
-	assert.equals(50, lucia.saberHabilidad())
-	
+		assert.equals(50, lucia.saberHabilidad())	
 	}
 	
 	test"saber la habilidad de lucia como solista, deberia ser 70"{
@@ -36,3 +34,4 @@ describe"test de la cantante lucia"{
 		assert.equals(400, lucia.costoDePresentacion(presentacionLaTrastienda))
 	}
 }
+
