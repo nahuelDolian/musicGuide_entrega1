@@ -3,7 +3,7 @@ import Gibson.*
 
 object luisAlberto {
 	
-	var habilidad = 8
+	var habilidad =8
 	
 	
 	method saberHabilidad(unaGuitarra){
@@ -11,16 +11,18 @@ object luisAlberto {
 	}
 	
 	method costoDePresentacion(unaPresentacion){
-		if(unaPresentacion.fecha()<=20170900){
+		if(unaPresentacion.fecha()<20170900){
 			return 1000
 		}else{
 			return 1200
 		}
 	}
 	
-	method asignarHabilidad(unValor){
+	/*method asignarHabilidad(unValor){
 		habilidad=unValor
+	}*/
+	method interpretaBien(unaCancion){
+		return true
 	}
-
 
 }
