@@ -1,12 +1,7 @@
 
 object gibson {
-	var valor
-	var estado
-	
-	constructor (){
-		valor=15
-		estado=true
-	}
+	var valor = 15
+	var estado = true
 	
 	method dameTuValor(){
 		if (estado){
