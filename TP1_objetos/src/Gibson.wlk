@@ -1,11 +1,15 @@
 
-object gibson {
-	var valor = 15
-	var estado "sana"
+class Gibson {
+	var valor
+	var estado
 	
+	constructor (){
+		valor=15
+		estado=true
+	}
 	
 	method dameTuValor(){
-		if (estado == "sana"){
+		if (estado){
 			return valor
 		}else{
 			return valor-10
@@ -13,11 +17,11 @@ object gibson {
 	}
 	
 	method dameTuEstado(){
-		return estado == "sana"
+		return estado
 	}
 	
 	method romperGuitarra(){
-		estado="rota"
+		estado=false
 	}
 
 
