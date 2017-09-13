@@ -12,16 +12,15 @@ class Presentacion {
 		predio=unPredio
 		cantantes=unosCantantes
 	}
-	
-	method cantaSolo(unCantante){
-		return cantantes.contains(unCantante)&&cantantes.size()==1
-	}
 
 	/*method fechaMes(){
 		var mesDia = fecha%10000
 		return mesDia*100 
 	}*/
 	
+	method cantaSolo(unCantante){
+		return cantantes.contains(unCantante)&&cantantes.size()==1
+	}
 	method costoDePresentacion(){
 		var costos =cantantes.map({
 			cantante=>cantante.costoDePresentacion(self)
